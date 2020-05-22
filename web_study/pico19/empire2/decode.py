@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+from gzip import zlib 
+import base64
+
+#session = '.eJwlzzFuwzAMheG7aM4giiIlZS3QE3QXKIlsjbR1INtDEeTuddH9fcD_Hq7a1O3DXfd56MXVZbiryxLFLONgyMy-aelxIBsEGgHNBClp9A2CSOEWs8-cfNHUilAhBeBcEKT0MEC0l9OEUjwB5qBRm7XYQYwAJATruXWKUswKY-vm3cX1bVrd15t-nz2haU8RiAn_likapoToB3AAIvPsI54Rpxsyb3XTPnU_4X3p68vb62PZtyr1S-vPesxqn_JuOIgly_M0x6bz_zi65y9K1lC_.Xre0Sw.vp-YQMCaKuMS7PonrtNV8VZWu5s'
+
+print(zlib.decompress(base64.urlsafe_b64decode(session)))
